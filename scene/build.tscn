@@ -1,0 +1,52 @@
+[gd_scene format=4 uid="uid://cyt7juvxue3vg"]
+
+[ext_resource type="Texture2D" uid="uid://whtht3xk6q1i" path="res://resource/New Piskel.png" id="1_c7twu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3dg68"]
+texture = ExtResource("1_c7twu")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_c4uqs"]
+tile_size = Vector2i(32, 32)
+sources/1 = SubResource("TileSetAtlasSource_3dg68")
+
+[node name="Build" type="Node2D" unique_id=1886506883]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=258095382]
+visible = false
+tile_map_data = PackedByteArray("AAD///7/AQAAAAAAAAAAAP7/AQABAAAAAAD+////AQACAAAAAAABAP//AQADAAAAAAD/////AQAAAAEAAAAAAP//AQAAAAEAAAD9/wAAAQABAAEAAAACAAAAAQACAAEAAAD9/wMAAQADAAEAAAACAAMAAQAAAAIAAAD9/wEAAQABAAIAAAD9/wIAAQABAAIAAAD+/wMAAQACAAIAAAD//wMAAQACAAIAAAAAAAMAAQACAAIAAAABAAMAAQACAAIAAAACAAEAAQADAAIAAAACAAIAAQADAAIAAAD+/wAAAQAAAAMAAAD//wAAAQAAAAMAAAAAAAAAAQAAAAMAAAABAAAAAQAAAAMAAAD+/wEAAQABAAMAAAD//wEAAQABAAMAAAAAAAEAAQABAAMAAAABAAEAAQABAAMAAAABAAIAAQABAAMAAAAAAAIAAQABAAMAAAD//wIAAQABAAMAAAD+/wIAAQABAAMAAAA=")
+tile_set = SubResource("TileSet_c4uqs")
+
+[node name="BuildBlock" type="Node2D" parent="." unique_id=1108684715]
+
+[node name="Large" type="Area2D" parent="BuildBlock" unique_id=1554934144]
+
+[node name="Sprite2D" type="Sprite2D" parent="BuildBlock/Large" unique_id=2145804678]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BuildBlock/Large" unique_id=556845201]
+
+[node name="Medium" type="Area2D" parent="BuildBlock" unique_id=1742979508]
+
+[node name="Sprite2D" type="Sprite2D" parent="BuildBlock/Medium" unique_id=1084058683]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BuildBlock/Medium" unique_id=1403957107]
+
+[node name="Small" type="Area2D" parent="BuildBlock" unique_id=529279631]
+
+[node name="Sprite2D" type="Sprite2D" parent="BuildBlock/Small" unique_id=1807563896]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BuildBlock/Small" unique_id=556482247]
