@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://cqghy4e11jnu5"]
+
+[ext_resource type="Texture2D" uid="uid://cn708aemwa8cr" path="res://resource/PNG/mapTile_104.png" id="1_adabf"]
+[ext_resource type="Script" uid="uid://c78otgmlsv7fa" path="res://src/gpu_particles_2d.gd" id="2_5x1ae"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xwavj"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 98, 0)
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+texture = ExtResource("1_adabf")
+process_material = SubResource("ParticleProcessMaterial_xwavj")
+script = ExtResource("2_5x1ae")

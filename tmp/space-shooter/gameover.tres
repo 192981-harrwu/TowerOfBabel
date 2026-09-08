@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://b82amkvmvgy2q"]
+
+[ext_resource type="FontFile" uid="uid://dgj2x67euc544" path="res://resource/Bonus/kenvector_future.ttf" id="1_tfq5w"]
+
+[resource]
+default_font = ExtResource("1_tfq5w")

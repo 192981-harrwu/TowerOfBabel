@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cyt7juvxue3vg"]
+
+[ext_resource type="PackedScene" uid="uid://bouks3ia21frl" path="res://scene/build_block.tscn" id="1_6hn0m"]
+[ext_resource type="Script" uid="uid://coa823x7obe15" path="res://src/main_block.gd" id="2_nvv55"]
+
+[node name="Build" type="Node2D" unique_id=1886506883]
+position = Vector2(-3, -53)
+
+[node name="BuildBlock" parent="." unique_id=34531704 instance=ExtResource("1_6hn0m")]
+script = ExtResource("2_nvv55")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=234780636]
