@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c7ltekms72bgi"]
+
+[ext_resource type="Script" uid="uid://cegewosy2wgdw" path="res://src/game.gd" id="1_dbls1"]
+[ext_resource type="PackedScene" uid="uid://cyt7juvxue3vg" path="res://scene/build.tscn" id="2_dbls1"]
+[ext_resource type="PackedScene" uid="uid://bcvklwvrshpem" path="res://scene/finnish.tscn" id="3_33cqm"]
+
+[node name="Game" type="Node2D" unique_id=2056097485]
+script = ExtResource("1_dbls1")
+
+[node name="Build" parent="." unique_id=1886506883 instance=ExtResource("2_dbls1")]
+
+[node name="Walk" type="Node2D" parent="." unique_id=1009886809]
+
+[node name="FINNISH" parent="." unique_id=597883065 instance=ExtResource("3_33cqm")]

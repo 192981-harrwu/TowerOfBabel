@@ -2,16 +2,18 @@
 
 [ext_resource type="PackedScene" uid="uid://bme2wn77mynpl" path="res://scene/blocks/medium.tscn" id="3_xllvr"]
 [ext_resource type="PackedScene" uid="uid://m3h8d1o3cuay" path="res://scene/blocks/large.tscn" id="4_grw5e"]
-[ext_resource type="Script" uid="uid://lbnbgsp4h0is" path="res://src/blocks/medium.gd" id="4_l66v3"]
 [ext_resource type="PackedScene" uid="uid://77vhhu3lu2cs" path="res://scene/blocks/small.tscn" id="5_5me3a"]
 
 [node name="BuildBlock" type="Node2D" unique_id=34531704]
 
 [node name="Medium" parent="." unique_id=2075434186 instance=ExtResource("3_xllvr")]
 visible = false
-script = ExtResource("4_l66v3")
 
 [node name="Small" parent="." unique_id=16143601 instance=ExtResource("5_5me3a")]
 visible = false
+script = null
 
 [node name="Large" parent="." unique_id=417506122 instance=ExtResource("4_grw5e")]
+visible = false
+script = null
+metadata/_edit_group_ = true

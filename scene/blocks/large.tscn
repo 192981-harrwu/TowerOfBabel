@@ -39,15 +39,15 @@ tile_size = Vector2i(32, 32)
 sources/0 = SubResource("TileSetAtlasSource_5m6pr")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2x2dy"]
-size = Vector2(127, 94)
+size = Vector2(191, 127)
 
 [node name="Large" type="StaticBody2D" unique_id=417506122]
 script = SubResource("GDScript_grw5e")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1789199681]
-position = Vector2(0, -16)
-tile_map_data = PackedByteArray("AAD//wEAAAACAAIAAAAAAAEAAAACAAIAAAABAP//AAACAAEAAAD+/wAAAAABAAIAAAD//wAAAAABAAMAAAAAAAAAAAABAAMAAAAAAP//AAAAAAMAAAD/////AAAAAAMAAAABAAAAAAADAAIAAAD+/wEAAAADAAEAAAABAAEAAAAAAAIAAAD+////AAABAAEAAAA=")
+tile_map_data = PackedByteArray("AAD//wEAAAACAAIAAAAAAAEAAAACAAIAAAABAP//AAABAAMAAAD+/wAAAAABAAMAAAD//wAAAAABAAMAAAAAAAAAAAABAAMAAAAAAP//AAABAAMAAAD/////AAABAAMAAAABAAAAAAABAAMAAAD+/wEAAAACAAIAAAABAAEAAAACAAIAAAD+////AAABAAMAAAACAAEAAAAAAAIAAAACAAAAAAADAAIAAAACAP//AAADAAIAAAD+//7/AAAAAAMAAAD///7/AAAAAAMAAAAAAP7/AAAAAAMAAAABAP7/AAAAAAMAAAD9/wEAAAADAAEAAAACAP7/AAACAAEAAAD9//7/AAABAAEAAAD9////AAABAAIAAAD9/wAAAAABAAIAAAA=")
 tile_set = SubResource("TileSet_2x2dy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1378432610]
+position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_2x2dy")

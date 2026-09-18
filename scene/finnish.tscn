@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bcvklwvrshpem"]
+
+[node name="FINNISH" type="Node2D" unique_id=597883065]
+
+[node name="Control" type="Control" parent="." unique_id=49878204]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Control" unique_id=2002126364]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.57500005
+text = "GAME FINNISHED"

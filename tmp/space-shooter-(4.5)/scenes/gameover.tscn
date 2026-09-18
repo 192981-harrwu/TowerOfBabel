@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://paa8ch50uaj4"]
+
+[ext_resource type="Script" uid="uid://coqq0mgidbm2e" path="res://src/gameover.gd" id="1_2mkfd"]
+[ext_resource type="FontFile" uid="uid://dgj2x67euc544" path="res://resource/Bonus/kenvector_future.ttf" id="1_ncp31"]
+[ext_resource type="Theme" uid="uid://b82amkvmvgy2q" path="res://gameover.tres" id="2_h8i2o"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dy3ie"]
+font = ExtResource("1_ncp31")
+font_size = 64
+
+[node name="Gameover" type="Node2D"]
+script = ExtResource("1_2mkfd")
+
+[node name="ui" type="Control" parent="."]
+custom_minimum_size = Vector2(1152, 650)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+size_flags_horizontal = 4
+theme = ExtResource("2_h8i2o")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="ui"]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 263.0
+offset_right = 950.0
+offset_bottom = 410.0
+text = "You Lose 
+Final Score:  0000"
+label_settings = SubResource("LabelSettings_dy3ie")
