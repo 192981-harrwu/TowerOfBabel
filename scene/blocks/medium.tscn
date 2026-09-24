@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bme2wn77mynpl"]
+[gd_scene load_steps=5 format=3 uid="uid://bme2wn77mynpl"]
 
 [ext_resource type="Texture2D" uid="uid://whtht3xk6q1i" path="res://resource/New Piskel.png" id="1_t3cwr"]
 
@@ -42,14 +42,14 @@ sources/0 = SubResource("TileSetAtlasSource_kcxgg")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_70688"]
 size = Vector2(128, 32)
 
-[node name="Medium" type="StaticBody2D" unique_id=2075434186]
+[node name="Medium" type="RigidBody2D"]
 position = Vector2(0, 16)
 metadata/_edit_group_ = true
 
-[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=633358093]
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray(0, 0, 254, 255, 255, 255, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 255, 255, 0, 0, 3, 0, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 1, 0, 0, 0)
 tile_set = SubResource("TileSet_70688")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1516024214]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -16)
 shape = SubResource("RectangleShape2D_70688")

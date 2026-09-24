@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cp4iq5q3adl20"]
+
+[ext_resource type="Script" uid="uid://cma3rearohdhj" path="res://src/button.gd" id="1_70mxu"]
+[ext_resource type="Texture2D" uid="uid://dcfkoccgm4oxm" path="res://resource/background1.png" id="1_dpmfe"]
+[ext_resource type="Script" uid="uid://di3xg3c0gbk72" path="res://src/background.gd" id="2_25yx3"]
+
+[node name="LOAD" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+z_index = 1
+offset_left = -28.0
+offset_top = -16.0
+offset_right = 28.0
+offset_bottom = 15.0
+text = "START"
+script = ExtResource("1_70mxu")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(38.999985, 6.5000076)
+scale = Vector2(2.2152777, 2.3179014)
+texture = ExtResource("1_dpmfe")
+script = ExtResource("2_25yx3")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
