@@ -7,6 +7,7 @@
 script = ExtResource("1_nvv55")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1.500061, -2.5000076)
