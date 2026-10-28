@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://ge63unka6lwx"]
+[gd_scene format=3 uid="uid://ge63unka6lwx"]
 
 [ext_resource type="Script" uid="uid://vwncck0igt2d" path="res://src/test.gd" id="1_fghjm"]
 [ext_resource type="Texture2D" uid="uid://cr730kpufj2lm" path="res://resource/icon.svg" id="2_bp0px"]
@@ -6,21 +6,22 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fghjm"]
 size = Vector2(158, 20)
 
-[node name="TEST" type="Node2D"]
+[node name="TEST" type="Node2D" unique_id=1231141617]
 script = ExtResource("1_fghjm")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=172707724]
+position_smoothing_enabled = true
 
-[node name="Area2D" type="StaticBody2D" parent="."]
+[node name="Area2D" type="StaticBody2D" parent="." unique_id=955144309]
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-position = Vector2(-12.500015, 236.5)
+[node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=1073146958]
+position = Vector2(4.4999847, 309.5)
 scale = Vector2(6.6328125, 0.1796875)
 texture = ExtResource("2_bp0px")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-17.873413, 234.00002)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1538674197]
+position = Vector2(-0.8734131, 307)
 scale = Vector2(5.373418, 1)
 shape = SubResource("RectangleShape2D_fghjm")
 metadata/_edit_group_ = true

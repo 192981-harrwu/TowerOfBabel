@@ -1,3 +1,32 @@
 [gd_scene format=3 uid="uid://spovbrba0w0f"]
 
-[node name="Walk" type="Node2D"]
+[ext_resource type="Texture2D" uid="uid://difgd7bkaxmuv" path="res://resource/Persian.png" id="1_b5jn5"]
+[ext_resource type="Script" uid="uid://dnvhgtjtigmra" path="res://src/walk.gd" id="1_dsw7y"]
+[ext_resource type="Script" uid="uid://bpuaafgcjo465" path="res://src/player_Walk.gd" id="1_r4nuh"]
+[ext_resource type="Script" uid="uid://biiargerpl2ak" path="res://scene/player_sprite.gd" id="2_r4nuh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_68f8x"]
+radius = 21.0
+height = 58.0
+
+[node name="Walk" type="Node2D" unique_id=282499190]
+top_level = true
+script = ExtResource("1_dsw7y")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=66536233]
+script = ExtResource("1_r4nuh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=2062816133]
+shape = SubResource("CapsuleShape2D_68f8x")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1569943457]
+position = Vector2(-9, -3)
+texture = ExtResource("1_b5jn5")
+script = ExtResource("2_r4nuh")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="CharacterBody2D" unique_id=1348536480]
+remote_path = NodePath("../../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=660533924]
+
+[connection signal="child_entered_tree" from="CharacterBody2D" to="CharacterBody2D" method="_on_child_entered_tree"]

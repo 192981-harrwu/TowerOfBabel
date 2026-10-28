@@ -9,6 +9,7 @@ func change_texture(idx: int):
 func _ready() -> void:
 	randomize()
 	change_texture(randi_range(0, 100));
+	Global.charaterSeed = randi() % 100;
 
 func _process(delta: float) -> void:
 	time_passed += delta

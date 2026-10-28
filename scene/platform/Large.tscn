@@ -1,0 +1,62 @@
+[gd_scene format=4 uid="uid://bst58l3p53du2"]
+
+[ext_resource type="Texture2D" uid="uid://whtht3xk6q1i" path="res://resource/New Piskel.png" id="1_2d4r6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y5qll"]
+texture = ExtResource("1_2d4r6")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_jfjax"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_y5qll")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_68f8x"]
+size = Vector2(128, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sah7u"]
+size = Vector2(20, 235)
+
+[node name="Large" type="Node2D" unique_id=1306707519]
+position = Vector2(-230, 217.00002)
+scale = Vector2(3, 3)
+metadata/_edit_group_ = true
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1488042467]
+tile_map_data = PackedByteArray("AAD9//3/AAABAAEAAAACAP3/AAACAAEAAAD9/wEAAAABAAIAAAACAAIAAAAAAAIAAAD9/wIAAAADAAEAAAD9//7/AAABAAIAAAD9////AAABAAIAAAD9/wAAAAABAAIAAAD+/wIAAAACAAIAAAD//wIAAAACAAIAAAAAAAIAAAACAAIAAAABAAIAAAACAAIAAAD+//3/AAAAAAMAAAD///3/AAAAAAMAAAAAAP3/AAAAAAMAAAABAP3/AAAAAAMAAAACAP7/AAADAAIAAAACAP//AAADAAIAAAACAAAAAAADAAIAAAACAAEAAAADAAIAAAD+//7/AAABAAEAAAD///7/AAAAAAMAAAAAAP7/AAAAAAMAAAABAP7/AAACAAEAAAABAP//AAADAAIAAAABAAAAAAADAAIAAAAAAAAAAAABAAMAAAAAAP//AAABAAMAAAD/////AAABAAMAAAD+////AAABAAIAAAD+/wAAAAABAAIAAAD+/wEAAAADAAEAAAD//wEAAAACAAIAAAD//wAAAAABAAMAAAAAAAEAAAACAAIAAAABAAEAAAAAAAIAAAA=")
+tile_set = SubResource("TileSet_jfjax")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapLayer" unique_id=1684460514]
+shape = SubResource("RectangleShape2D_68f8x")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TileMapLayer" unique_id=1592964980]
+position = Vector2(108, 0)
+shape = SubResource("RectangleShape2D_sah7u")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TileMapLayer/CollisionShape2D2" unique_id=1542564801]
+position = Vector2(-107, -106.5)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_sah7u")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TileMapLayer/CollisionShape2D2" unique_id=426752135]
+position = Vector2(-215, -0.5)
+rotation = 3.1415927
+shape = SubResource("RectangleShape2D_sah7u")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TileMapLayer/CollisionShape2D2/CollisionShape2D3" unique_id=142840313]
+position = Vector2(-107, -106.5)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_sah7u")
